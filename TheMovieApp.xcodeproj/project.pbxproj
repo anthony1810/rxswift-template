@@ -11,6 +11,7 @@
 		2F207CCC28CA30DB00D74C04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F207CCB28CA30DB00D74C04 /* ViewController.swift */; };
 		2F207CCF28CA30DB00D74C04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F207CCD28CA30DB00D74C04 /* Main.storyboard */; };
 		2F207CD428CA30DD00D74C04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F207CD228CA30DD00D74C04 /* LaunchScreen.storyboard */; };
+		2FBDE16A28CB371C00CC668F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBDE16928CB371C00CC668F /* R.generated.swift */; };
 		2FEDD7C728CA399B0015C0CA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEDD7C628CA399B0015C0CA /* AppCoordinator.swift */; };
 		2FEDD7DB28CA39AB0015C0CA /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEDD7C928CA39AB0015C0CA /* Array+Extensions.swift */; };
 		2FEDD7DC28CA39AB0015C0CA /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEDD7CA28CA39AB0015C0CA /* UIViewController+Extensions.swift */; };
@@ -64,6 +65,7 @@
 		2F207CCB28CA30DB00D74C04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F207CCE28CA30DB00D74C04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F207CD328CA30DD00D74C04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FBDE16928CB371C00CC668F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		2FEDD7C628CA399B0015C0CA /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		2FEDD7C928CA39AB0015C0CA /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		2FEDD7CA28CA39AB0015C0CA /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				2F207CC728CA30DB00D74C04 /* AppDelegate.swift */,
+				2FBDE16928CB371C00CC668F /* R.generated.swift */,
 				2FEDD7C328CA35120015C0CA /* Helpers */,
 				2FEDD7C528CA399B0015C0CA /* Coordinators */,
 				2FEDD7C228CA34C20015C0CA /* Networking */,
@@ -374,6 +377,7 @@
 			buildConfigurationList = 2F207CD828CA30DD00D74C04 /* Build configuration list for PBXNativeTarget "TheMovieApp" */;
 			buildPhases = (
 				CBA2CF810481E827F9588261 /* [CP] Check Pods Manifest.lock */,
+				2FF68C5428CB2CBE001FAF8A /* R.Swift */,
 				2F207CC028CA30DB00D74C04 /* Sources */,
 				2F207CC128CA30DB00D74C04 /* Frameworks */,
 				2F207CC228CA30DB00D74C04 /* Resources */,
@@ -438,6 +442,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2FF68C5428CB2CBE001FAF8A /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		AA75AA264F82DD61A3D4BA8F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -513,6 +537,7 @@
 				2FEDD80928CA3A9F0015C0CA /* Environment.swift in Sources */,
 				2FEDD80028CA3A0F0015C0CA /* ActivityIndicator.swift in Sources */,
 				2FEDD83B28CA44940015C0CA /* HomeAPI.swift in Sources */,
+				2FBDE16A28CB371C00CC668F /* R.generated.swift in Sources */,
 				2FEDD7E028CA39AB0015C0CA /* Kingfisher+Rx.swift in Sources */,
 				2FEDD7EB28CA39AB0015C0CA /* Date+Extensions.swift in Sources */,
 				2FEDD7E728CA39AB0015C0CA /* RefreshHandler.swift in Sources */,
@@ -682,7 +707,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LL6XGHYGV4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TheMovieApp/configs/Info.plist;
+				INFOPLIST_FILE = TheMovieApp/Helpers/configs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -711,7 +736,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LL6XGHYGV4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TheMovieApp/configs/Info.plist;
+				INFOPLIST_FILE = TheMovieApp/Helpers/configs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
