@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  TheMovieApp
+
+  Created by Anthony Tran on 24/03/2022.
+  */
+
+ ///Alert
+ "alert.confirm" = "OK";
+ "alert.cancel" = "Cancel";
