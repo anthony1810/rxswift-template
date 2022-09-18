@@ -1,6 +1,6 @@
 //
 //  LogManager.swift
-//  TheMovieApp
+//  RxTemplate
 //
 //  Created by Anthony Tran on 18/03/2022.
 //

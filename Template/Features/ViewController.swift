@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  TheMovieApp
+//  RxTemplate
 //
 //  Created by Anthony Tran on 08/09/2022.
 //

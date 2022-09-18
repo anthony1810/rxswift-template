@@ -1,6 +1,6 @@
 //
 //  UIStackView+Extensions.swift
-//  TheMovieApp
+//  RxTemplate
 //
 //  Created by Anthony Tran on 25/03/2022.
 //
