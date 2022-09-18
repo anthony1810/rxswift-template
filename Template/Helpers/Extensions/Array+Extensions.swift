@@ -1,6 +1,6 @@
 //
 //  Array+Extensions.swift
-//  TheMovieApp
+//  RxTemplate
 //
 //  Created by Anthony Tran on 19/03/2022.
 //

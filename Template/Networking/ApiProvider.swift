@@ -1,6 +1,6 @@
 //
 //  ApiProvider.swift
-//  TheMovieApp
+//  RxTemplate
 //
 //  Created by Anthony Tran on 17/03/2022.
 //
