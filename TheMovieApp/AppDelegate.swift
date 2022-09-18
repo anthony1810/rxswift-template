@@ -12,7 +12,7 @@ import XCoordinator
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var mainWindow: UIWindow = UIWindow()
+    lazy var mainWindow: UIWindow = UIWindow()
     private var appCoordinator = AppCoordinator()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

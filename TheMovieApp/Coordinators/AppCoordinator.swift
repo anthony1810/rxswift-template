@@ -28,6 +28,10 @@ class AppCoordinator: NavigationCoordinator<AppRoute> {
     
     override func prepareTransition(for route: AppRoute) -> NavigationTransition {
         switch route {
+        case .main:
+            let viewController = R.storyboard.main.viewController()!
+//            viewController.bind(to: HomeViewModel(router: unownedRouter))
+            return .push(viewController)
         default: return .popToRoot()
         }
     }

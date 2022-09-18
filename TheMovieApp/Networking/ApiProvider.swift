@@ -44,7 +44,7 @@ class ApiProvider<Target> where Target: Moya.TargetType {
     private func baseRequest(_ token: Target) -> Single<Moya.Response> {
         return provider.rx.request(token)
                 .filterSuccessfulStatusCodes()
-                .subscribeOn(ConcurrentDispatchQueueScheduler(queue: DispatchQueue(label: "com.queue.apiprovider")))
+                .subscribe(on: ConcurrentDispatchQueueScheduler(queue: DispatchQueue(label: "com.queue.apiprovider")))
     }
 
     func requestObject<Model: BaseMappable>(_ target: Target, type: Model.Type) -> Single<Model> {
